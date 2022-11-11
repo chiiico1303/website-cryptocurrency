@@ -108,45 +108,61 @@ nav .btn {
 }
 
 /* responsividade */
-@media (width > 300px) {
+@media (max-width: 700px) {
   .container {
     width: 100%;
+    
   }
 
   .logo {
   width: 40px;
   cursor: pointer;
   position: absolute;
-  left: 30px;
+  left: 5%;
   top: 40px;
-  }
-
-  nav .btn {
-   opacity: 0;
+  
   }
 
   .container .menu {
-  width: 10px;
   font-size: 20px;
   position: absolute;
-  right: 10px;
+  right: 0;
   top: 40px;
   cursor: pointer;
+  
 }
-  .content h1 {
-   font-size: 40px;
-   margin-bottom: 20px;
+  
+  nav .btn {
+  opacity: 0;
   }
 
+  .content h1 {
+   font-size: 45px;
+   width: 90%;
+   margin-top: -90px;
+   margin-bottom: 10px;
+  }
+  
+.content p {
+  width: 95%;
+  font-size: 16px;
+  
+}
+
+
   .coin-list {
-    margin-top: 10%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-    flex-direction: row;
+    height: 40%;
+    right: 0%; 
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+     border: 1px solid red;
   }
+
+  .coin {
+    width: 200px;
+}
 
 
 }
