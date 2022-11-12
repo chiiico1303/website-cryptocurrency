@@ -111,7 +111,6 @@ nav .btn {
 @media (max-width: 700px) {
   .container {
     width: 100%;
-    
   }
 
   .logo {
@@ -120,7 +119,6 @@ nav .btn {
   position: absolute;
   left: 5%;
   top: 40px;
-  
   }
 
   .container .menu {
@@ -129,11 +127,10 @@ nav .btn {
   right: 0;
   top: 40px;
   cursor: pointer;
-  
-}
+  }
   
   nav .btn {
-  opacity: 0;
+   opacity: 0;
   }
 
   .content h1 {
@@ -143,12 +140,10 @@ nav .btn {
    margin-bottom: 10px;
   }
   
-.content p {
-  width: 95%;
-  font-size: 16px;
-  
-}
-
+  .content p {
+    width: 95%;
+    font-size: 16px;
+  }
 
   .coin-list {
     height: 40%;
@@ -157,30 +152,40 @@ nav .btn {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-     border: 1px solid red;
   }
 
   .coin {
     width: 200px;
-}
-
-
-}
-
-/*
-@media (width > 700px) {
-  .login {
-    top: 0;
-    right: 0;
-    left: auto;
-    translate: 0 0;
-    margin: 0;
-    height: 100%;
-    border-radius: 0;
-    padding-top: 240px;
   }
 }
 
+@media (max-width: 380px) {
+  .coin-list {
+    height: 30%;
+    gap: 5px;
+  }
+
+  .coin {
+    height: 70px;
+}
+}
+
+
+@media (height < 700px) {
+  .content .btn {
+margin-top: 10px;
+}
+  
+  .coin-list {
+    height: 27%;
+    gap: 3px;
+  }
+  
+  .coin {
+    height: 60px;
+}
+}
+/*
 @media (width > 1200px) {
   .login {
     width: 25%;
